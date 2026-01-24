@@ -1,0 +1,14 @@
+{
+    "name": "vitaltrack-pro-monorepo",
+    "private": true,
+    "scripts": {
+        "frontend:dev": "cd frontend && /home/hanene/.cache/ms-playwright-go/1.50.1/node ./node_modules/vite/bin/vite.js --port 3000 --host 0.0.0.0",
+        "frontend:test": "cd frontend && /home/hanene/.cache/ms-playwright-go/1.50.1/node ./node_modules/vitest/vitest.mjs run",
+        "backend:dev": "cd backend && python3 -m uvicorn app.main:app --host 0.0.0.0 --port 8000",
+        "test": "npm run frontend:test",
+        "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

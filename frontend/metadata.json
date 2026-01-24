@@ -1,0 +1,8 @@
+
+{
+  "name": "BizGuard AI",
+  "description": "Système intelligent de détection d'anomalies pour petits business. Analyse financière par IA, scores de suspicion et rapports de fraude.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
